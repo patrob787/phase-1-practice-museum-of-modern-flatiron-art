@@ -66,6 +66,8 @@ form.addEventListener('submit', (e) => {
     postComment(newComment)
 
     patchExhibitComments(currentExhibit);
+
+    e.target['comment-input'].value = "";
     
 })
 
